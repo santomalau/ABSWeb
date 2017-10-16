@@ -138,6 +138,7 @@ li a:hover:not(.active) {
 	margin: 0;
 }
 
+
 .desc h2  {
 	font-family: 'Fredoka One', cursive;
 	font-size:  30px;
@@ -152,5 +153,7 @@ li a:hover:not(.active) {
 .background2 {
 	background-color: black;
 	width: auto;
+
 }
+
 
