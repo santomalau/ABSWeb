@@ -12,8 +12,8 @@
  	<body class="home">
  		<div class="navbar">
  			<ul>
-		  		<li><a  href="home.php">Home</a></li>
-		  		<li><a href="login.html">Login</a></li>
+		  		<li><a  href="home">Home</a></li>
+		  		<li><a href="login">Login</a></li>
 		  		<li><a class="active" href="#contact">Contact</a></li>
 		  		<a class="logo" href="#aboutus"><img class="logo" src="<?php echo base_url() ?>static/gambarHOME/logo.jpg"></a>
 			</ul>

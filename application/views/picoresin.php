@@ -2,7 +2,7 @@
  <html lang="en">
  	<head>
  		<meta charset="utf-8">
- 		<title>Kampoeng Vapor</title>
+ 		<title>Kits</title>
  		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
  		<link href="https://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet">
  		<link href="<?php echo base_url(); ?>static/css/style.css" type="text/css" rel="stylesheet">
@@ -15,7 +15,8 @@
  		<ul>
 		  <li><a  href="<?php echo base_url(); ?>Vape/home">Home</a></li>
 		  <li><a class="active" href="#product">Product</a></li>
-		  <li><a href="#contact">Contact</a></li>
+		  <li><a href=<?php echo base_url(); ?>Vape/login>Login</a></li>
+		  <li><a href=<?php echo base_url(); ?>Vape/contact>Contact</a></li>
 		  <a class="logo" href="#aboutus"><img class="logo" src=<?php echo base_url() ?>static/gambarHOME/logo.jpg></a>
 		</ul>
 

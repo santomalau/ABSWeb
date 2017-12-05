@@ -1,5 +1,8 @@
  <!DOCTYPE html>
  <html lang="en">
+<?php
+if(isset($this->session->userdata['logged_in'])){$username = ($this->session->userdata['logged_in']['username']);}
+?>
  	<head>
  		<meta charset="utf-8">
  		<title>Home</title>
@@ -19,9 +22,13 @@
 
  		<div class="navbar">
  			<ul>
-		  		<li><a class="active" href="home.html">Home</a></li>
-		  		<li><a href="login.html">Login</a></li>
-		  		<li><a href="#contact">Contact</a></li>
+		  		<li><a class="active" href="<?php echo base_url(); ?>Vape/home">Home</a></li>
+                <?php if (!isset($this->session->userdata['logged_in'])){ ?>
+                    <li><a href=<?php echo base_url(); ?>Vape/login>Login</a></li>
+                <?php } else { ?>
+                <li><a href=<?php echo base_url(); ?>Vape/logout>Logout</a></li>
+                <?php } ?>
+		  		<li><a href=<?php echo base_url(); ?>Vape/contact>Contact</a></li>
 		  		<a class="logo" href="#aboutus"><img class="logo" src="<?php echo base_url() ?>static/gambarHOME/logo.jpg"></a>
 			</ul>
 		</div>
