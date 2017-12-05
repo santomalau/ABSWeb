@@ -22,8 +22,8 @@
 
 		<div class="container">  
   <form id="contact" action="<?php echo base_url(); ?>Vape/contact" method="post">
-    <h3>Colorlib Contact Form</h3>
-    <h4>Contact us for custom quote</h4>
+    <h3>Kampoeng Vape Contact Form</h3>
+    <h4>Isi dengan naluri hatimu</h4>
     <fieldset>
       <input name='name' placeholder="Your name" type="text" tabindex="1" required autofocus>
     </fieldset>
@@ -39,7 +39,6 @@
     <fieldset>
       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
     </fieldset>
-    <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
   </form>
 </div>
 <
