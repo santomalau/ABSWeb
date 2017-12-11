@@ -47,7 +47,7 @@ if(isset($this->session->userdata['logged_in'])){$username = ($this->session->us
 				</li>
 				<li>
 					<div class="xop-box xop-img-2">
-						<a href="#">
+						<a href=<?php echo base_url(); ?>Vape/atomizer>
 							<div class="xop-info">
 								<h3>Atomizer</h3>
 								<p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
@@ -57,7 +57,7 @@ if(isset($this->session->userdata['logged_in'])){$username = ($this->session->us
 				</li>
 				<li>
 					<div class="xop-box xop-img-3">
-						<a href="#">
+						<a href=<?php echo base_url(); ?>Vape/battery>
 							<div class="xop-info">
 								<h3>Mod</h3>
 								<p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
@@ -67,7 +67,7 @@ if(isset($this->session->userdata['logged_in'])){$username = ($this->session->us
 				</li>
 				<li>
 					<div class="xop-box xop-img-4">
-						<a href="#">
+						<a href=<?php echo base_url(); ?>Vape/accessory>
 							<div class="xop-info">
 								<h3>Accessories</h3>
 								<p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>

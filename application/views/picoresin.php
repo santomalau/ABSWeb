@@ -13,9 +13,13 @@
  		<div class="navbar">
 
  		<ul>
-		  <li><a  href="<?php echo base_url(); ?>Vape/home">Home</a></li>
+		 <li><a  href="<?php echo base_url(); ?>Vape/home">Home</a></li>
+                <?php if (!isset($this->session->userdata['logged_in'])){ ?>
+                    <li><a href=<?php echo base_url(); ?>Vape/login>Login</a></li>
+                <?php } else { ?>
+            <li><a href=<?php echo base_url(); ?>Vape/logout>Logout</a></li>
+                <?php } ?>
 		  <li><a class="active" href="#product">Product</a></li>
-		  <li><a href=<?php echo base_url(); ?>Vape/login>Login</a></li>
 		  <li><a href=<?php echo base_url(); ?>Vape/contact>Contact</a></li>
 		  <a class="logo" href="#aboutus"><img class="logo" src=<?php echo base_url() ?>static/gambarHOME/logo.jpg></a>
 		</ul>

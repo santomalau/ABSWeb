@@ -33,6 +33,19 @@
    $data['response'] = $this->m_contact->post();
    $this->load->view('contact', $data);
   }
+
+ public function atomizer(){
+   $this->load->view('atomizer'); 
+  }
+
+  public function battery(){
+   $this->load->view('battery'); 
+  }
+
+  public function accessory(){
+   $this->load->view('accessory'); 
+  }
+     
      
      // Check for user login process
   public function login() {
@@ -42,7 +55,7 @@
    
    if ($this->form_validation->run() == FALSE) {
     if(isset($this->session->userdata['logged_in'])){
-     $this->load->view('home');
+     return true;
     }
     else{
      $this->load->view('login');
