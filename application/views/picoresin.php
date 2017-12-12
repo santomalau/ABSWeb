@@ -24,6 +24,7 @@
 		  <a class="logo" href="#aboutus"><img class="logo" src=<?php echo base_url() ?>static/gambarHOME/logo.jpg></a>
 		</ul>
 
+    
 
 
 
@@ -177,6 +178,12 @@ simple and fashionable appearance of MELO III Mini.</p>
 			</div>
 		</div>
 	</div>
+    
+
+    
+            
+                    
+            
 </div>
 </div>
 

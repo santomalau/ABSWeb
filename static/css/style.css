@@ -263,8 +263,7 @@ li a:hover:not(.active) {
 }
 
 .xop-img-1 {
-	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-	url(../gambarHOME/kitshome.jpg);
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)); /* bottom, image */
 	background-size : contain;
 }
  
@@ -318,6 +317,12 @@ li a:hover:not(.active) {
 	background-size: contain;
 	background-repeat: no-repeat;
 
+}
+
+.buynow {
+    background-image: url("../gambar(MOD)PICORESIN/13.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
@@ -562,4 +567,4 @@ body {
 	  border-top-left-radius: 0;
 	  border-top-right-radius: 0;
 	}
-
+    

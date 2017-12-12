@@ -2,18 +2,18 @@
  <html lang="en">
  	<head>
  		<meta charset="utf-8">
- 		<title>Kampoeng Vapor</title>
+ 		<title>Atomizer</title>
+ 		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
  		<link href="https://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet">
- 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>static/css/bootstrap-grid.min.css">
- 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>static/css/style.css">
  		<link href="<?php echo base_url(); ?>static/css/style.css" type="text/css" rel="stylesheet">
+ 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>static/css/bootstrap-grid.min.css">
  	</head>
 
- 	<body class="picoresin">
+ 	<body class="picoresin" style="background-color: white">
  		<div class="navbar">
 
  		<ul>
-		  		<li><a  href="<?php echo base_url(); ?>Vape/home">Home</a></li>
+		 <li><a  href="<?php echo base_url(); ?>Vape/home">Home</a></li>
                 <?php if (!isset($this->session->userdata['logged_in'])){ ?>
                     <li><a href=<?php echo base_url(); ?>Vape/login>Login</a></li>
                 <?php } else { ?>
@@ -26,8 +26,8 @@
 
 
 	</div>
-	<div class="container" >
-		<div class="vape row">
+	<div class="container" style="height: 60vh;padding-top: 20vh" >
+		<div class="row">
 			<div class ="img col-sm-6">
 				<img src="<?php echo base_url(); ?>static/gambarATOMIZER/1.jpg">
 			</div>
@@ -39,8 +39,8 @@
 			</div>
 		</div>
 
-		<div class="vape row background" style="height: 140vh;background-color: #D0CCC3;margin-top": >
-			<div class ="desc col-sm-6" style="text-align: left;padding-left: 10%;margin-top: 40%">			
+		<div class="vape row background" style="height: 110vh;background-color: #D0CCC3;margin-top: 0%;" >
+			<div class ="desc col-sm-6" style="text-align: left;padding-left: 10%;margin-top: 10%">			
 				<h2>Parameter:</h2><br>
 				<p>
 					Diameter: 15mm<br>
@@ -58,34 +58,33 @@
 			</div>
 		</div>
 
-		<div class="vape row ">
+		<div class="vape row " style="height: 80vh;margin-top: 10vh">
 			<div class ="desc col-sm-6">
-					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-					<h2>A Refined Airflow System</h2>
+					
+					<h2 style="padding-top: 30vh">A Refined Airflow System</h2>
 				<p>
 				The GS BASAL includes a refined airflow system. You’ll have a great vaping experience simply by freely twisting the airflow control ring to get the optimal airflow.
 				</p>
 			</div>
 			<div class ="img col-sm-6">
-				<img src="<?php echo base_url(); ?>static/gambarATOMIZER/3.gif" width="95%">
+				<img src="<?php echo base_url(); ?>static/gambarATOMIZER/3.gif" width="50%">
 			</div>
 		</div>
 
 		<div class="vape row ">
-			<div class ="desc col-sm-12">
-				<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<div class ="desc col-sm-12" style="height: 100vh;margin-top: 0">
 				<h2>GS Air Coils Optimized for Flavor</h2>
 				<p>
 					With the GS Air coils, the GS BASAL is designed to deliver the purest flavor of your e-liquid. <br><br><br><br>
 				</p>
-				<img src="<?php echo base_url(); ?>static/gambarATOMIZER/4.png" width="70%">
+				<img src="<?php echo base_url(); ?>static/gambarATOMIZER/4.png" >
 			</div>
 		</div>
 
-		<div class="vape row ">
-		<div class ="img col-sm-12" style="background-image: url('<?php echo base_url(); ?>static/gambarATOMIZER/5.png'); background-repeat: no-repeat; background-position: center; ">
-			<h2 style="text-align: left;padding-left: 10%;">Solid Structure of All Stainless Steel</h2>
-			<p style="text-align: left;padding: 10%;">
+		<div class="row " style="background-image: url('<?php echo base_url(); ?>static/gambarATOMIZER/5.png'); background-repeat: no-repeat; background-position: center;height: 80vh;">
+		<div class ="img col-sm-12" >
+			<h2 style="text-align: left;padding-left: 10%;margin-top: 10vh">Solid Structure of All Stainless Steel</h2>
+			<p style="text-align: left;padding-left: 10%;">
 				All parts (except the glass tube) of the GS BASAL are<br>
 				made of stainless steel. And the GS BASAL<br>
 				atomizer can be detached and<br>
@@ -96,8 +95,8 @@
 		</div>
 		</div>
 
-		<div class="vape row background">
-			<div class ="desc col-sm-12">
+		<div class="vape row background" style="margin-top: 0vh;height:120vh">
+			<div class ="desc col-sm-12" >
 				<h2 style="padding-top: 10%">
 					How to Fill?
 				</h2>
@@ -108,7 +107,5 @@
 				<img src="<?php echo base_url(); ?>static/gambarATOMIZER/6.png">
 			</div>
 		</div>
-        </div>
-        </div>
  	</body>
  </html>

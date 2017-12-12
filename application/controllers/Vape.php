@@ -21,7 +21,9 @@
   }
   
   public function home(){
-   $this->load->view('home');
+    $this->load->model('m_kategori');
+   $data['response'] = $this->m_kategori->get();
+   $this->load->view('home', $data);
  }
 
   public function picoresin(){
@@ -45,6 +47,25 @@
   public function accessory(){
    $this->load->view('accessory'); 
   }
+
+  public function link_category(){
+    $id = $this->input->get('id');
+      
+      if ($id == "K001"){
+         $this->load->view('picoresin');
+      }
+      else if ($id == "K002"){
+         $this->load->view('atomizer');
+      }
+      else if ($id == "K003"){
+         $this->load->view('battery');
+      }
+      else if ($id == "K004"){
+         $this->load->view('accessory');
+      }
+      
+  }
+
      
      
      // Check for user login process
@@ -76,7 +97,7 @@
       );
       // Add user data in session
       $this->session->set_userdata('logged_in', $session_data);
-      $this->load->view('home');
+      $this->home();
      }
     } 
     else {
@@ -88,7 +109,7 @@
      public function logout(){
          $sess_array = array('username' => '');
          $this->session->unset_userdata('logged_in', $sess_array);
-         $this->load->view('home');
+         $this->home();
      }
 
 }

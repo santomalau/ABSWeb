@@ -35,46 +35,18 @@ if(isset($this->session->userdata['logged_in'])){$username = ($this->session->us
 
 		<div class="xop-section">
 			<ul class="xop-grid">
+				<?php foreach($response as $data){ ?>
+				<a href="<?php echo base_url(); ?>Vape/link_category?id=<?php echo $data['id'] ?>">
 				<li>
-					<div class="xop-box xop-img-1">
-						<a href="<?php echo base_url(); ?>Vape/picoresin">
+					<div class="xop-box xop-img-1" style="background-image: url(<?php echo base_url(); ?>static/gambarHOME/<?php echo $data['gambar_kategori'] ?>);">
 							<div class="xop-info">
-								<h3>Kits</h3>
-								<p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+								<h3><?php echo $data['nama_kategori'] ?></h3>
+								<p><?php echo $data['deskripsi_kategori'] ?></p>
 							</div>
-						</a>
 					</div>
 				</li>
-				<li>
-					<div class="xop-box xop-img-2">
-						<a href=<?php echo base_url(); ?>Vape/atomizer>
-							<div class="xop-info">
-								<h3>Atomizer</h3>
-								<p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
-							</div>
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="xop-box xop-img-3">
-						<a href=<?php echo base_url(); ?>Vape/battery>
-							<div class="xop-info">
-								<h3>Mod</h3>
-								<p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
-							</div>
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="xop-box xop-img-4">
-						<a href=<?php echo base_url(); ?>Vape/accessory>
-							<div class="xop-info">
-								<h3>Accessories</h3>
-								<p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
-							</div>
-						</a>
-					</div>
-				</li>
+			</a>
+				<?php } ?>
 			</ul>
 		</div>
 

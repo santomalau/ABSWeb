@@ -37,9 +37,6 @@ header("location: Vape/login");
 				?>
       <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
       <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
-      <label class="checkbox">
-        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
-      </label>
       <input type="submit" value="Login " name="submit"/>
     </form>
   </div>
